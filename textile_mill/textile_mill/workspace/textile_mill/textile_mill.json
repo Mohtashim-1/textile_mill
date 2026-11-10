@@ -22,7 +22,7 @@
    "label": "Inventory Value by Process"
   }
  ],
- "content": "[{\"id\": \"tm0001\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Director Dashboards</b></span>\", \"col\": 12}}, {\"id\": \"tm0002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Command Center\", \"col\": 3}}, {\"id\": \"tm0003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Production & Efficiency\", \"col\": 3}}, {\"id\": \"tm0004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Cost & Finance\", \"col\": 3}}, {\"id\": \"tm0005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Quality & Inventory\", \"col\": 3}}, {\"id\": \"tm0006\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>CEO</b></span>\", \"col\": 12}}, {\"id\": \"tm0007\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Recovery Yield\", \"col\": 3}}, {\"id\": \"tm0008\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"A Grade Fabric\", \"col\": 3}}, {\"id\": \"tm0009\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cost per Meter Finished A\", \"col\": 3}}, {\"id\": \"tm0010\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"WIP Value\", \"col\": 3}}, {\"id\": \"tm0011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Order Cost and Profitability\", \"col\": 3}}, {\"id\": \"tm0012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Batch Genealogy\", \"col\": 3}}, {\"id\": \"tm0013\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Production Director</b></span>\", \"col\": 12}}, {\"id\": \"tm0014\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Spinning Yield\", \"col\": 3}}, {\"id\": \"tm0015\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Indigo g per kg\", \"col\": 3}}, {\"id\": \"tm0016\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Avg Loom Efficiency\", \"col\": 3}}, {\"id\": \"tm0017\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cutting Variance\", \"col\": 3}}, {\"id\": \"tm0018\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Yield by Stage\", \"col\": 6}}, {\"id\": \"tm0019\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Loom Efficiency by Loom\", \"col\": 6}}, {\"id\": \"tm0020\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>CFO</b></span>\", \"col\": 12}}, {\"id\": \"tm0021\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Cost per Unit Actual vs Standard\", \"col\": 6}}, {\"id\": \"tm0022\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Inventory Value by Process\", \"col\": 6}}, {\"id\": \"tm0023\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Quality &amp; Inventory</b></span>\", \"col\": 12}}, {\"id\": \"tm0024\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Fabric Grade Split\", \"col\": 6}}, {\"id\": \"tm0025\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Home Textile</b></span>\", \"col\": 12}}, {\"id\": \"tm0026\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CTP Production Entry\", \"col\": 3}}, {\"id\": \"tm0027\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Piece Weight Check\", \"col\": 3}}, {\"id\": \"tm0028\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Carton Packing List\", \"col\": 3}}, {\"id\": \"tm0029\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Set Completion\", \"col\": 3}}, {\"id\": \"tm0030\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\", \"col\": 12}}, {\"id\": \"tm0031\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Dye Recipe\", \"col\": 3}}, {\"id\": \"tm0032\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Indigo Range Log\", \"col\": 3}}, {\"id\": \"tm0033\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Loom Shift Production\", \"col\": 3}}, {\"id\": \"tm0034\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fabric Roll Inspection\", \"col\": 3}}, {\"id\": \"tm0035\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Cut Plan\", \"col\": 3}}, {\"id\": \"tm0036\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Production Plan\", \"col\": 3}}, {\"id\": \"tm0037\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Work Order\", \"col\": 3}}, {\"id\": \"tm0038\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\", \"col\": 12}}, {\"id\": \"tm0039\", \"type\": \"card\", \"data\": {\"card_name\": \"Dashboards\", \"col\": 3}}, {\"id\": \"tm0040\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 3}}, {\"id\": \"tm0041\", \"type\": \"card\", \"data\": {\"card_name\": \"Shop Floor\", \"col\": 3}}, {\"id\": \"tm0042\", \"type\": \"card\", \"data\": {\"card_name\": \"Home Textile\", \"col\": 3}}, {\"id\": \"tm0043\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 3}}]",
+ "content": "[{\"id\": \"tm0001\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Director Dashboards</b></span>\", \"col\": 12}}, {\"id\": \"tm0002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Command Center\", \"col\": 3}}, {\"id\": \"tm0003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Production & Efficiency\", \"col\": 3}}, {\"id\": \"tm0004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Cost & Finance\", \"col\": 3}}, {\"id\": \"tm0005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Quality & Inventory\", \"col\": 3}}, {\"id\": \"tm0006\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>CEO</b></span>\", \"col\": 12}}, {\"id\": \"tm0007\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Recovery Yield\", \"col\": 3}}, {\"id\": \"tm0008\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"A Grade Fabric\", \"col\": 3}}, {\"id\": \"tm0009\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cost per Meter Finished A\", \"col\": 3}}, {\"id\": \"tm0010\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"WIP Value\", \"col\": 3}}, {\"id\": \"tm0011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Order Cost and Profitability\", \"col\": 3}}, {\"id\": \"tm0012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Batch Genealogy\", \"col\": 3}}, {\"id\": \"tm0013\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Production Director</b></span>\", \"col\": 12}}, {\"id\": \"tm0014\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Spinning Yield\", \"col\": 3}}, {\"id\": \"tm0015\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Indigo g per kg\", \"col\": 3}}, {\"id\": \"tm0016\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Avg Loom Efficiency\", \"col\": 3}}, {\"id\": \"tm0017\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cutting Variance\", \"col\": 3}}, {\"id\": \"tm0018\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Yield by Stage\", \"col\": 6}}, {\"id\": \"tm0019\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Loom Efficiency by Loom\", \"col\": 6}}, {\"id\": \"tm0020\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>CFO</b></span>\", \"col\": 12}}, {\"id\": \"tm0021\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Cost per Unit Actual vs Standard\", \"col\": 6}}, {\"id\": \"tm0022\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Inventory Value by Process\", \"col\": 6}}, {\"id\": \"tm0023\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Quality &amp; Inventory</b></span>\", \"col\": 12}}, {\"id\": \"tm0024\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Fabric Grade Split\", \"col\": 6}}, {\"id\": \"tm0025\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Home Textile</b></span>\", \"col\": 12}}, {\"id\": \"tm0026\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CTP Production Entry\", \"col\": 3}}, {\"id\": \"tm0027\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Piece Weight Check\", \"col\": 3}}, {\"id\": \"tm0028\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Carton Packing List\", \"col\": 3}}, {\"id\": \"tm0029\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Set Completion\", \"col\": 3}}, {\"id\": \"tm0030\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Exceptions</b></span>\", \"col\": 12}}, {\"id\": \"tm0031\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Late Order Risk\", \"col\": 3}}, {\"id\": \"tm0032\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Yield Loss Exceptions\", \"col\": 3}}, {\"id\": \"tm0033\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Quality Hold\", \"col\": 3}}, {\"id\": \"tm0034\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Material Shortage vs Plan\", \"col\": 3}}, {\"id\": \"tm0035\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\", \"col\": 12}}, {\"id\": \"tm0036\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Dye Recipe\", \"col\": 3}}, {\"id\": \"tm0037\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Indigo Range Log\", \"col\": 3}}, {\"id\": \"tm0038\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Loom Shift Production\", \"col\": 3}}, {\"id\": \"tm0039\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fabric Roll Inspection\", \"col\": 3}}, {\"id\": \"tm0040\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Cut Plan\", \"col\": 3}}, {\"id\": \"tm0041\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Production Plan\", \"col\": 3}}, {\"id\": \"tm0042\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Work Order\", \"col\": 3}}, {\"id\": \"tm0043\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\", \"col\": 12}}, {\"id\": \"tm0044\", \"type\": \"card\", \"data\": {\"card_name\": \"Dashboards\", \"col\": 3}}, {\"id\": \"tm0045\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 3}}, {\"id\": \"tm0046\", \"type\": \"card\", \"data\": {\"card_name\": \"Critical Reports\", \"col\": 3}}, {\"id\": \"tm0047\", \"type\": \"card\", \"data\": {\"card_name\": \"Operations Reports\", \"col\": 3}}, {\"id\": \"tm0048\", \"type\": \"card\", \"data\": {\"card_name\": \"Shop Floor\", \"col\": 3}}, {\"id\": \"tm0049\", \"type\": \"card\", \"data\": {\"card_name\": \"Home Textile\", \"col\": 3}}, {\"id\": \"tm0050\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 3}}]",
  "creation": "2026-11-10 17:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
@@ -228,6 +228,253 @@
    "link_type": "Report",
    "onboard": 0,
    "report_ref_doctype": "Bin",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Critical Reports",
+   "link_count": 10,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Yield Loss Exceptions",
+   "link_count": 0,
+   "link_to": "Yield Loss Exceptions",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Work Order",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Late Order Risk",
+   "link_count": 0,
+   "link_to": "Late Order Risk",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Sales Order",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Material Shortage vs Plan",
+   "link_count": 0,
+   "link_to": "Material Shortage vs Plan",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Work Order",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Margin Erosion",
+   "link_count": 0,
+   "link_to": "Margin Erosion",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Work Order",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Aged and Stuck WIP",
+   "link_count": 0,
+   "link_to": "Aged and Stuck WIP",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Batch",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Quality Hold",
+   "link_count": 0,
+   "link_to": "Quality Hold",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Quality Inspection",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Corrective Cost Summary",
+   "link_count": 0,
+   "link_to": "Corrective Cost Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Job Card",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Lot Recall Trace",
+   "link_count": 0,
+   "link_to": "Lot Recall Trace",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Batch",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Give-away Cost",
+   "link_count": 0,
+   "link_to": "Give-away Cost",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Piece Weight Check",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Downtime and MTBF",
+   "link_count": 0,
+   "link_to": "Downtime and MTBF",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Machine Downtime Log",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations Reports",
+   "link_count": 11,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Shift Production Register",
+   "link_count": 0,
+   "link_to": "Shift Production Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Loom Shift Production",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Operator Performance",
+   "link_count": 0,
+   "link_to": "Operator Performance",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Loom Shift Production",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Defect Pareto",
+   "link_count": 0,
+   "link_to": "Defect Pareto",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fabric Roll Inspection",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Dye House Batch Log",
+   "link_count": 0,
+   "link_to": "Dye House Batch Log",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Work Order",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Chemical Consumption per Unit",
+   "link_count": 0,
+   "link_to": "Chemical Consumption per Unit",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Stock Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Utility Cost per Unit",
+   "link_count": 0,
+   "link_to": "Utility Cost per Unit",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Utility Consumption Log",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Waste and By-product Recovery",
+   "link_count": 0,
+   "link_to": "Waste and By-product Recovery",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Stock Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Subcontract Reconciliation",
+   "link_count": 0,
+   "link_to": "Subcontract Reconciliation",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Subcontracting Order",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Marker Efficiency and Over-cut",
+   "link_count": 0,
+   "link_to": "Marker Efficiency and Over-cut",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Cut Plan",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Bundle Line WIP",
+   "link_count": 0,
+   "link_to": "Bundle Line WIP",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Bundle Ticket",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Order Book by Business Line",
+   "link_count": 0,
+   "link_to": "Order Book by Business Line",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Sales Order",
    "type": "Link"
   },
   {
@@ -529,7 +776,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-11-10 17:00:00.000000",
+ "modified": "2026-11-10 18:00:00.000000",
  "modified_by": "Administrator",
  "module": "Textile Mill",
  "name": "Textile Mill",
@@ -673,6 +920,38 @@
    "doc_view": "",
    "label": "Set Completion",
    "link_to": "Set Completion",
+   "report_ref_doctype": "Work Order",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Late Order Risk",
+   "link_to": "Late Order Risk",
+   "report_ref_doctype": "Sales Order",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Yield Loss Exceptions",
+   "link_to": "Yield Loss Exceptions",
+   "report_ref_doctype": "Work Order",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Quality Hold",
+   "link_to": "Quality Hold",
+   "report_ref_doctype": "Quality Inspection",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Material Shortage vs Plan",
+   "link_to": "Material Shortage vs Plan",
    "report_ref_doctype": "Work Order",
    "type": "Report"
   },
