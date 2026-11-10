@@ -84,3 +84,14 @@ Judgment calls made while implementing the build guide. Newest at the bottom of 
 | 7.4 | Cut Plan in kg | Cut Plan takes UOM, GSM and width from the fabric item; knit plans use the knit stores and stage; denim cutting-variance KPIs exclude knit plans. | Metres and kg must not be summed. |
 | 7.5 | Over-cut | 1:2:2:1 marker × 834 plies = 5,004 pieces for a 5,000-piece order; 4 pieces stay in Knit FG Store. | 5,000 is not a multiple of 6. |
 | 7.6 | Tests | Tests are `FrappeTestCase`s that use pure functions, read-only demo checks and rolled-back writes, so they run on the demo site without test fixtures. | `bench run-tests` would create `_Test` records in the live demo company. |
+
+## Operational reports
+
+| # | Topic | Decision | Why |
+|---|---|---|---|
+| R.1 | One library | All 21 operational reports read from `reports_lib_ops.py`, which reuses the core report and KPI functions (stage yield, cost per unit, batch balances, downtime). | Exception reports must agree with the core reports and dashboard tiles. |
+| R.2 | Yield exceptions | A work order is an exception when its yield is below the stage `STAGE_YIELD` target; RAG is still shown. Loss vs target is valued at the work order's output cost per unit. | Amber/red alone hid small but costly gaps. |
+| R.3 | Recall trace | Forward genealogy stops at unbatched garment work orders; the trace continues to deliveries of the work order's (or its Cut Plan's) sales order, matching variants by attribute values so unwashed and washed sizes match. | Jeans are cut as unwashed variants and shipped as washed ones. |
+| R.4 | MTBF / MTTR | A stop is one Machine Downtime Log, or one shift-sheet row with stop minutes for machines without logs; run time is job-card time, or 8 h minus stops for shift-sheet machines. | Same downtime and run-time basis as the OEE tiles. |
+| R.5 | Business line of an item | Taken from the item's stage; Spinning and raw items count as Denim. | Spinning is shared by all three lines. |
+| R.6 | Workspace | New "Critical Reports" and "Operations Reports" cards plus an "Exceptions" shortcut row (Late Order Risk, Yield Loss Exceptions, Quality Hold, Material Shortage vs Plan). | Directors open exceptions first. |

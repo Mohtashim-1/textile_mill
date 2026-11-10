@@ -46,9 +46,11 @@ unittest.main(module=None, argv=['x', 'discover', '-s', '../apps/textile_mill/te
 | 5 | Denim demo journey | Done |
 | 6 | Home textile (masters, CTP, weight checks, cartons/SSCC, reports, KPIs, business-line dashboards, demo HT-01…16) | Done |
 | 7 | Knitting (masters, Knitting Shift Production, DR-KNAVY, T-shirts, KPIs, stage dashboards, demo K-01…08) | Done |
+| — | Operational reports: 10 critical (exception) + 11 detail reports | Done |
 | 8 | Process-depth backlog (Part F) | Not started — prioritise with the client |
 
-Design decisions are logged in [`docs/DECISIONS.md`](docs/DECISIONS.md).
+All 35 reports are listed in [`docs/REPORTS.md`](docs/REPORTS.md). Design decisions are logged in
+[`docs/DECISIONS.md`](docs/DECISIONS.md).
 
 #### License
 
