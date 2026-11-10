@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "posting_date",
+  "sales_order",
+  "style_template",
+  "fabric_item",
+  "fabric_uom",
+  "cb_1",
+  "marker_length_m",
+  "pieces_per_marker",
+  "plies",
+  "end_bit_allowance_pct",
+  "fabric_gsm",
+  "fabric_width_inch",
+  "bundle_size",
+  "status",
+  "sizes_section",
+  "size_ratio",
+  "rolls_section",
+  "fabric_rolls",
+  "summary_section",
+  "total_pieces",
+  "fabric_required_m",
+  "fabric_issued_m",
+  "cb_2",
+  "standard_fabric_m",
+  "cutting_variance_m",
+  "cutting_variance_pct",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "CUT-.YY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CUT-.YY.-.#####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "style_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Style Template",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fabric_item",
+   "fieldtype": "Link",
+   "label": "Fabric Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "Meter",
+   "fieldname": "fabric_uom",
+   "fieldtype": "Select",
+   "label": "Fabric UOM",
+   "options": "Meter\nKg"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marker_length_m",
+   "fieldtype": "Float",
+   "label": "Marker Length (m)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pieces_per_marker",
+   "fieldtype": "Int",
+   "label": "Pieces Per Marker",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plies",
+   "fieldtype": "Int",
+   "label": "Plies",
+   "reqd": 1
+  },
+  {
+   "default": "2",
+   "fieldname": "end_bit_allowance_pct",
+   "fieldtype": "Percent",
+   "label": "End-bit Allowance %"
+  },
+  {
+   "depends_on": "eval:doc.fabric_uom=='Kg'",
+   "fieldname": "fabric_gsm",
+   "fieldtype": "Float",
+   "label": "Fabric GSM"
+  },
+  {
+   "depends_on": "eval:doc.fabric_uom=='Kg'",
+   "fieldname": "fabric_width_inch",
+   "fieldtype": "Float",
+   "label": "Fabric Width (inch)"
+  },
+  {
+   "fieldname": "bundle_size",
+   "fieldtype": "Int",
+   "label": "Bundle Size"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Draft\nCut\nBundled\nStitched",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sizes_section",
+   "fieldtype": "Section Break",
+   "label": "Size Ratio"
+  },
+  {
+   "fieldname": "size_ratio",
+   "fieldtype": "Table",
+   "label": "Size Ratio",
+   "options": "Cut Plan Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rolls_section",
+   "fieldtype": "Section Break",
+   "label": "Fabric Rolls"
+  },
+  {
+   "fieldname": "fabric_rolls",
+   "fieldtype": "Table",
+   "label": "Fabric Rolls",
+   "options": "Cut Plan Roll"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_pieces",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Pieces",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_required_m",
+   "fieldtype": "Float",
+   "label": "Fabric Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_issued_m",
+   "fieldtype": "Float",
+   "label": "Fabric Issued",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "standard_fabric_m",
+   "fieldtype": "Float",
+   "label": "Standard Fabric",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_variance_m",
+   "fieldtype": "Float",
+   "label": "Cutting Variance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_variance_pct",
+   "fieldtype": "Percent",
+   "label": "Cutting Variance %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cut Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Cut Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Garment User",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Director"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO"
+  }
+ ],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

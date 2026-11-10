@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-10 03:00:00.000000",
+ "description": "Mill-wide defaults for grading, bundles and utility absorption.",
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "grading_section",
+  "grade_a_max_points",
+  "grading_cb",
+  "grade_b_max_points",
+  "grade_map_section",
+  "grade_items",
+  "garments_section",
+  "default_bundle_size",
+  "utility_section",
+  "utility_absorption_enabled",
+  "utility_cb",
+  "utility_absorbed_account",
+  "utility_rates"
+ ],
+ "fields": [
+  {
+   "fieldname": "grading_section",
+   "fieldtype": "Section Break",
+   "label": "Fabric Grading (4-point system)"
+  },
+  {
+   "default": "28",
+   "fieldname": "grade_a_max_points",
+   "fieldtype": "Float",
+   "label": "Grade A Max Points / 100 sq yd"
+  },
+  {
+   "fieldname": "grading_cb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "40",
+   "description": "Rolls above this are Rejected.",
+   "fieldname": "grade_b_max_points",
+   "fieldtype": "Float",
+   "label": "Grade B Max Points / 100 sq yd"
+  },
+  {
+   "fieldname": "grade_map_section",
+   "fieldtype": "Section Break",
+   "label": "Grade Items"
+  },
+  {
+   "fieldname": "grade_items",
+   "fieldtype": "Table",
+   "label": "Grade Items",
+   "options": "Fabric Grade Map"
+  },
+  {
+   "fieldname": "garments_section",
+   "fieldtype": "Section Break",
+   "label": "Garments"
+  },
+  {
+   "default": "20",
+   "fieldname": "default_bundle_size",
+   "fieldtype": "Int",
+   "label": "Default Bundle Size"
+  },
+  {
+   "fieldname": "utility_section",
+   "fieldtype": "Section Break",
+   "label": "Utility Absorption"
+  },
+  {
+   "default": "1",
+   "fieldname": "utility_absorption_enabled",
+   "fieldtype": "Check",
+   "label": "Utility Absorption Enabled"
+  },
+  {
+   "fieldname": "utility_cb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "utility_absorbed_account",
+   "fieldtype": "Link",
+   "label": "Utility Absorbed Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "utility_rates",
+   "fieldtype": "Table",
+   "label": "Utility Rates",
+   "options": "Stage Utility Rate"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-10 03:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Textile Mill Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Recycling User"
+  },
+  {
+   "read": 1,
+   "role": "Spinning User"
+  },
+  {
+   "read": 1,
+   "role": "Dyeing User"
+  },
+  {
+   "read": 1,
+   "role": "Indigo User"
+  },
+  {
+   "read": 1,
+   "role": "Weaving User"
+  },
+  {
+   "read": 1,
+   "role": "Finishing QA User"
+  },
+  {
+   "read": 1,
+   "role": "Garment User"
+  },
+  {
+   "read": 1,
+   "role": "Dye Lab Manager"
+  },
+  {
+   "read": 1,
+   "role": "Production Director"
+  },
+  {
+   "read": 1,
+   "role": "Plant Controller"
+  },
+  {
+   "read": 1,
+   "role": "CEO"
+  },
+  {
+   "read": 1,
+   "role": "CFO"
+  },
+  {
+   "read": 1,
+   "role": "Board Viewer"
+  }
+ ],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

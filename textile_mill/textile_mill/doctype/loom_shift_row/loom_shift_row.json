@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "loom",
+  "weaver",
+  "rpm",
+  "picks_per_inch",
+  "efficiency_pct",
+  "meters",
+  "kg",
+  "warp_breaks",
+  "weft_breaks",
+  "stop_minutes"
+ ],
+ "fields": [
+  {
+   "fieldname": "loom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Loom",
+   "options": "Workstation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "weaver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Weaver",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "rpm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "RPM"
+  },
+  {
+   "default": "44",
+   "fieldname": "picks_per_inch",
+   "fieldtype": "Float",
+   "label": "Picks Per Inch"
+  },
+  {
+   "fieldname": "efficiency_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Efficiency %"
+  },
+  {
+   "fieldname": "meters",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Meters"
+  },
+  {
+   "description": "Terry looms record kg instead of metres.",
+   "fieldname": "kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Kg"
+  },
+  {
+   "fieldname": "warp_breaks",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Warp Breaks"
+  },
+  {
+   "fieldname": "weft_breaks",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weft Breaks"
+  },
+  {
+   "fieldname": "stop_minutes",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Stop Minutes"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Loom Shift Row",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

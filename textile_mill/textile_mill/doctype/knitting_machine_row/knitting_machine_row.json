@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "machine",
+  "operator",
+  "dia_inch",
+  "gauge",
+  "stitch_length_mm",
+  "rpm",
+  "efficiency_pct",
+  "rolls_produced",
+  "kg_produced",
+  "defects_count",
+  "stop_minutes"
+ ],
+ "fields": [
+  {
+   "fieldname": "machine",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Machine",
+   "options": "Workstation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Operator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "dia_inch",
+   "fieldtype": "Float",
+   "label": "Dia (inch)"
+  },
+  {
+   "fieldname": "gauge",
+   "fieldtype": "Int",
+   "label": "Gauge"
+  },
+  {
+   "fieldname": "stitch_length_mm",
+   "fieldtype": "Float",
+   "label": "Stitch Length (mm)"
+  },
+  {
+   "fieldname": "rpm",
+   "fieldtype": "Int",
+   "label": "RPM"
+  },
+  {
+   "fieldname": "efficiency_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Efficiency %"
+  },
+  {
+   "fieldname": "rolls_produced",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rolls Produced"
+  },
+  {
+   "fieldname": "kg_produced",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Kg Produced",
+   "reqd": 1
+  },
+  {
+   "fieldname": "defects_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Holes / Needle-line Defects"
+  },
+  {
+   "fieldname": "stop_minutes",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Stop Minutes"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Knitting Machine Row",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

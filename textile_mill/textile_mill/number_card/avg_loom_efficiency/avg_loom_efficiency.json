@@ -1,0 +1,20 @@
+{
+ "color": "#6a1b9a",
+ "creation": "2026-11-10 17:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "dynamic_filters_json": "{\"company\": \"frappe.defaults.get_user_default(\\\"Company\\\")\"}",
+ "filters_json": "{}",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Avg Loom Efficiency",
+ "method": "textile_mill.workspace_cards.loom_efficiency",
+ "modified": "2026-11-10 17:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Avg Loom Efficiency",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "type": "Custom"
+}

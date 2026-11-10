@@ -2,24 +2,23 @@ app_name = "textile_mill"
 app_title = "Textile Mill"
 app_publisher = "Mission20 Zero"
 app_description = "Integrated denim, home textile and knitting mill on ERPNext"
-app_email = "mohtashim@codecrestsolutions.com"
+app_email = "shoaibmohtashim973@gmail.com"
 app_license = "mit"
 
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext"]
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "textile_mill",
-# 		"logo": "/assets/textile_mill/logo.png",
-# 		"title": "Textile Mill",
-# 		"route": "/textile_mill",
-# 		"has_permission": "textile_mill.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "textile_mill",
+		"logo": "/assets/textile_mill/images/textile-mill.svg",
+		"title": "Textile Mill",
+		"route": "/app/textile-mill-settings",
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -43,7 +42,11 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+	"Work Order": "public/js/work_order.js",
+	"Batch": "public/js/batch.js",
+	"Sales Order": "public/js/sales_order.js",
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -74,6 +77,15 @@ app_license = "mit"
 # ----------
 
 # add methods and filters to jinja environment
+jinja = {
+	"methods": [
+		"textile_mill.print_utils.textile_qr",
+		"textile_mill.print_utils.roll_lot",
+		"textile_mill.print_utils.batch_qty",
+		"textile_mill.print_utils.code128_svg",
+		"textile_mill.print_utils.customer_label_spec",
+	],
+}
 # jinja = {
 # 	"methods": "textile_mill.utils.jinja_methods",
 # 	"filters": "textile_mill.utils.jinja_filters"
@@ -83,7 +95,8 @@ app_license = "mit"
 # ------------
 
 # before_install = "textile_mill.install.before_install"
-# after_install = "textile_mill.install.after_install"
+after_install = "textile_mill.setup.install.after_install"
+after_migrate = "textile_mill.setup.install.after_migrate"
 
 # Uninstallation
 # ------------
@@ -137,34 +150,31 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Item": {
+		"validate": "textile_mill.overrides.item.validate",
+	},
+	"Delivery Note": {
+		"on_cancel": "textile_mill.overrides.delivery_note.release_packing_list",
+		"on_trash": "textile_mill.overrides.delivery_note.release_packing_list",
+	},
+	"Stock Entry": {
+		"before_validate": "textile_mill.overrides.stock_entry.before_validate",
+	},
+	"Work Order": {
+		"before_validate": "textile_mill.overrides.work_order.before_validate",
+		"validate": "textile_mill.overrides.work_order.validate",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"textile_mill.tasks.all"
-# 	],
-# 	"daily": [
-# 		"textile_mill.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"textile_mill.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"textile_mill.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"textile_mill.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"cron": {
+		"0 1 * * *": ["textile_mill.dashboards.snapshot.build_yesterday"],
+	},
+}
 
 # Testing
 # -------

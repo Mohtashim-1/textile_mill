@@ -1,0 +1,302 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "posting_date",
+  "customer",
+  "sales_order",
+  "delivery_note",
+  "cb_1",
+  "item_code",
+  "pcs_per_carton",
+  "source_warehouse",
+  "carton_item",
+  "packing_warehouse",
+  "cb_2",
+  "net_kg_per_unit",
+  "carton_tare_kg",
+  "carton_length_cm",
+  "carton_width_cm",
+  "carton_height_cm",
+  "cartons_section",
+  "cartons",
+  "totals_section",
+  "total_cartons",
+  "total_qty",
+  "cb_3",
+  "total_net_kg",
+  "total_gross_kg",
+  "total_cbm",
+  "material_issue",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "CPL-.YY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CPL-.YY.-.#####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "no_copy": 1,
+   "options": "Delivery Note",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pcs_per_carton",
+   "fieldtype": "Int",
+   "label": "Units per Carton",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "default": "PKG-CARTON-L",
+   "fieldname": "carton_item",
+   "fieldtype": "Link",
+   "label": "Carton Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "packing_warehouse",
+   "fieldtype": "Link",
+   "label": "Packing Material Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_kg_per_unit",
+   "fieldtype": "Float",
+   "label": "Net kg per Unit"
+  },
+  {
+   "default": "1.2",
+   "fieldname": "carton_tare_kg",
+   "fieldtype": "Float",
+   "label": "Carton Tare (kg)"
+  },
+  {
+   "default": "60",
+   "fieldname": "carton_length_cm",
+   "fieldtype": "Float",
+   "label": "Carton L (cm)"
+  },
+  {
+   "default": "40",
+   "fieldname": "carton_width_cm",
+   "fieldtype": "Float",
+   "label": "Carton W (cm)"
+  },
+  {
+   "default": "40",
+   "fieldname": "carton_height_cm",
+   "fieldtype": "Float",
+   "label": "Carton H (cm)"
+  },
+  {
+   "fieldname": "cartons_section",
+   "fieldtype": "Section Break",
+   "label": "Cartons"
+  },
+  {
+   "fieldname": "cartons",
+   "fieldtype": "Table",
+   "label": "Cartons",
+   "options": "Carton Line"
+  },
+  {
+   "fieldname": "totals_section",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "total_cartons",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Cartons",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_net_kg",
+   "fieldtype": "Float",
+   "label": "Total Net kg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_gross_kg",
+   "fieldtype": "Float",
+   "label": "Total Gross kg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cbm",
+   "fieldtype": "Float",
+   "label": "Total CBM",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "material_issue",
+   "fieldtype": "Link",
+   "label": "Material Issue",
+   "no_copy": 1,
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Carton Packing List",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Carton Packing List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Garment User",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Director"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO"
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

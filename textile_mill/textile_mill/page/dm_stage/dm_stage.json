@@ -1,0 +1,59 @@
+{
+ "content": null,
+ "creation": "2026-11-10 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-11-10 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "dm-stage",
+ "owner": "Administrator",
+ "page_name": "dm-stage",
+ "roles": [
+  {
+   "role": "CEO"
+  },
+  {
+   "role": "Board Viewer"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Production Director"
+  },
+  {
+   "role": "Plant Controller"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Recycling User"
+  },
+  {
+   "role": "Spinning User"
+  },
+  {
+   "role": "Dyeing User"
+  },
+  {
+   "role": "Indigo User"
+  },
+  {
+   "role": "Weaving User"
+  },
+  {
+   "role": "Finishing QA User"
+  },
+  {
+   "role": "Garment User"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Stage Drill-down"
+}

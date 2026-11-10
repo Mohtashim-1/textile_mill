@@ -1,0 +1,277 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "inspection_date",
+  "inspector",
+  "cb_1",
+  "lot_item",
+  "lot_batch",
+  "source_warehouse",
+  "lot_qty_m",
+  "fabric_width_inch",
+  "rolls_section",
+  "rolls",
+  "defects_section",
+  "defects",
+  "summary_section",
+  "total_inspected_m",
+  "inspection_loss_m",
+  "cb_2",
+  "a_m",
+  "b_m",
+  "rejected_m",
+  "cb_3",
+  "a_pct",
+  "b_pct",
+  "rejected_pct",
+  "stock_entry",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "FRI-.YY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "FRI-.YY.-.#####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "inspection_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inspection Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspector",
+   "fieldtype": "Link",
+   "label": "Inspector",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lot_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lot Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lot_batch",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Lot Batch",
+   "options": "Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lot_qty_m",
+   "fieldtype": "Float",
+   "label": "Lot Qty (m)",
+   "read_only": 1
+  },
+  {
+   "default": "64",
+   "fieldname": "fabric_width_inch",
+   "fieldtype": "Float",
+   "label": "Fabric Width (inch)"
+  },
+  {
+   "fieldname": "rolls_section",
+   "fieldtype": "Section Break",
+   "label": "Rolls"
+  },
+  {
+   "fieldname": "rolls",
+   "fieldtype": "Table",
+   "label": "Rolls",
+   "options": "Fabric Roll",
+   "reqd": 1
+  },
+  {
+   "fieldname": "defects_section",
+   "fieldtype": "Section Break",
+   "label": "Defects (4-point system)"
+  },
+  {
+   "fieldname": "defects",
+   "fieldtype": "Table",
+   "label": "Defects",
+   "options": "Fabric Roll Defect"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_inspected_m",
+   "fieldtype": "Float",
+   "label": "Total Inspected (m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inspection_loss_m",
+   "fieldtype": "Float",
+   "label": "Inspection Loss (m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "a_m",
+   "fieldtype": "Float",
+   "label": "A (m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "b_m",
+   "fieldtype": "Float",
+   "label": "B (m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rejected_m",
+   "fieldtype": "Float",
+   "label": "Rejected (m)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "a_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "A %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "b_pct",
+   "fieldtype": "Percent",
+   "label": "B %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rejected_pct",
+   "fieldtype": "Percent",
+   "label": "Rejected %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "no_copy": 1,
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fabric Roll Inspection",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Fabric Roll Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finishing QA User",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Director"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Garment User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO"
+  }
+ ],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

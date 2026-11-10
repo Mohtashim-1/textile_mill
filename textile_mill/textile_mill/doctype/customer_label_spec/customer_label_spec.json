@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "ean_barcode",
+  "label_print_format",
+  "pcs_per_carton",
+  "carton_marks"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ean_barcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EAN Barcode"
+  },
+  {
+   "fieldname": "label_print_format",
+   "fieldtype": "Link",
+   "label": "Label Print Format",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "pcs_per_carton",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Units per Carton"
+  },
+  {
+   "fieldname": "carton_marks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Carton Marks"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Customer Label Spec",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

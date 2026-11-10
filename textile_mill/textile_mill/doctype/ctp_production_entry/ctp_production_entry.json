@@ -1,0 +1,278 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "posting_date",
+  "posting_time",
+  "shift",
+  "cb_1",
+  "work_order",
+  "product_item",
+  "source_item",
+  "line",
+  "source_section",
+  "source_batches",
+  "output_section",
+  "pieces_planned",
+  "pieces_cut",
+  "pieces_a",
+  "pieces_seconds",
+  "cb_2",
+  "seconds_weight_kg",
+  "rags_kg",
+  "cutting_waste_kg",
+  "cb_3",
+  "ctp_yield_pct",
+  "seconds_pct",
+  "weight_check",
+  "transfer_entry",
+  "stock_entry",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "CTP-.YY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CTP-.YY.-.#####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Mill Shift"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Work Order",
+   "options": "Work Order",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "work_order.production_item",
+   "fieldname": "product_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "source_item",
+   "fieldtype": "Link",
+   "label": "Source Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "line",
+   "fieldtype": "Link",
+   "label": "Line",
+   "options": "Workstation"
+  },
+  {
+   "fieldname": "source_section",
+   "fieldtype": "Section Break",
+   "label": "Source Material"
+  },
+  {
+   "fieldname": "source_batches",
+   "fieldtype": "Table",
+   "label": "Source Batches",
+   "options": "CTP Source Batch"
+  },
+  {
+   "fieldname": "output_section",
+   "fieldtype": "Section Break",
+   "label": "Output & Grading"
+  },
+  {
+   "fieldname": "pieces_planned",
+   "fieldtype": "Int",
+   "label": "Pieces Planned",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pieces_cut",
+   "fieldtype": "Int",
+   "label": "Pieces Cut",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pieces_a",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pieces A",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pieces_seconds",
+   "fieldtype": "Int",
+   "label": "Pieces Seconds"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seconds_weight_kg",
+   "fieldtype": "Float",
+   "label": "Seconds Weight (kg)"
+  },
+  {
+   "fieldname": "rags_kg",
+   "fieldtype": "Float",
+   "label": "Rags (kg)"
+  },
+  {
+   "fieldname": "cutting_waste_kg",
+   "fieldtype": "Float",
+   "label": "Cutting Waste (kg)"
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ctp_yield_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "CTP Yield %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seconds_pct",
+   "fieldtype": "Percent",
+   "label": "Seconds %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weight_check",
+   "fieldtype": "Link",
+   "label": "Weight Check",
+   "options": "Piece Weight Check"
+  },
+  {
+   "fieldname": "transfer_entry",
+   "fieldtype": "Link",
+   "label": "Transfer Entry",
+   "no_copy": 1,
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "no_copy": 1,
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CTP Production Entry",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "CTP Production Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Garment User",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Director"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO"
+  }
+ ],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,20 @@
+{
+ "color": "#ef6c00",
+ "creation": "2026-11-10 17:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "dynamic_filters_json": "{\"company\": \"frappe.defaults.get_user_default(\\\"Company\\\")\"}",
+ "filters_json": "{}",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Cutting Variance",
+ "method": "textile_mill.workspace_cards.cutting_variance_pct",
+ "modified": "2026-11-10 17:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Cutting Variance",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "type": "Custom"
+}

@@ -1,0 +1,362 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "DR-.###",
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "recipe_title",
+  "process_type",
+  "shade",
+  "customer",
+  "cb_1",
+  "base_item",
+  "output_item",
+  "basis_uom",
+  "base_qty_kg",
+  "expected_yield_pct",
+  "process_section",
+  "liquor_ratio",
+  "temperature_c",
+  "time_min",
+  "lab_dip_reference",
+  "cb_2",
+  "ph_min",
+  "ph_max",
+  "redox_min_mv",
+  "redox_max_mv",
+  "indigo_g_l_min",
+  "indigo_g_l_max",
+  "chem_section",
+  "chemicals",
+  "total_cost_per_kg",
+  "bom_section",
+  "bom",
+  "is_obsolete",
+  "cb_3",
+  "workflow_state",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "recipe_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Recipe Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Process Type",
+   "options": "Fiber Dyeing\nIndigo Dyeing\nProcessing\nPrinting\nKnit Dyeing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shade",
+   "options": "Shade"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_item",
+   "fieldtype": "Link",
+   "label": "Base Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "output_item",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Output Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "per kg",
+   "fieldname": "basis_uom",
+   "fieldtype": "Select",
+   "label": "Basis",
+   "options": "per kg\nper m"
+  },
+  {
+   "default": "1000",
+   "description": "Base material quantity (kg, or m when basis is per m).",
+   "fieldname": "base_qty_kg",
+   "fieldtype": "Float",
+   "label": "Base Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_yield_pct",
+   "fieldtype": "Percent",
+   "label": "Expected Yield %",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_section",
+   "fieldtype": "Section Break",
+   "label": "Process Parameters"
+  },
+  {
+   "fieldname": "liquor_ratio",
+   "fieldtype": "Data",
+   "label": "Liquor Ratio"
+  },
+  {
+   "fieldname": "temperature_c",
+   "fieldtype": "Float",
+   "label": "Temperature (\u00b0C)"
+  },
+  {
+   "fieldname": "time_min",
+   "fieldtype": "Int",
+   "label": "Time (min)"
+  },
+  {
+   "fieldname": "lab_dip_reference",
+   "fieldtype": "Data",
+   "label": "Lab Dip Reference"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ph_min",
+   "fieldtype": "Float",
+   "label": "pH Min"
+  },
+  {
+   "fieldname": "ph_max",
+   "fieldtype": "Float",
+   "label": "pH Max"
+  },
+  {
+   "fieldname": "redox_min_mv",
+   "fieldtype": "Float",
+   "label": "Redox Min (mV)"
+  },
+  {
+   "fieldname": "redox_max_mv",
+   "fieldtype": "Float",
+   "label": "Redox Max (mV)"
+  },
+  {
+   "fieldname": "indigo_g_l_min",
+   "fieldtype": "Float",
+   "label": "Indigo g/L Min"
+  },
+  {
+   "fieldname": "indigo_g_l_max",
+   "fieldtype": "Float",
+   "label": "Indigo g/L Max"
+  },
+  {
+   "fieldname": "chem_section",
+   "fieldtype": "Section Break",
+   "label": "Chemicals"
+  },
+  {
+   "fieldname": "chemicals",
+   "fieldtype": "Table",
+   "label": "Chemicals",
+   "options": "Dye Recipe Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_cost_per_kg",
+   "fieldtype": "Currency",
+   "label": "Total Chemical Cost per Base Unit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bom_section",
+   "fieldtype": "Section Break",
+   "label": "Output"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "no_copy": 1,
+   "options": "BOM",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "is_obsolete",
+   "fieldtype": "Check",
+   "label": "Is Obsolete",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "no_copy": 1,
+   "options": "Workflow State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Dye Recipe",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Dye Recipe",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dyeing User",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Indigo User",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dye Lab Manager",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Production Director",
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Recycling User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Spinning User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Weaving User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finishing QA User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Garment User"
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Plant Controller"
+  }
+ ],
+ "quick_entry": 0,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "recipe_title",
+ "track_changes": 1
+}

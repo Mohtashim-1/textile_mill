@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-10 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "carton_no",
+  "sscc",
+  "item_code",
+  "qty",
+  "net_kg",
+  "gross_kg",
+  "length_cm",
+  "width_cm",
+  "height_cm",
+  "cbm"
+ ],
+ "fields": [
+  {
+   "fieldname": "carton_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Carton No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sscc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SSCC"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "net_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Net kg"
+  },
+  {
+   "fieldname": "gross_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gross kg"
+  },
+  {
+   "fieldname": "length_cm",
+   "fieldtype": "Float",
+   "label": "L (cm)"
+  },
+  {
+   "fieldname": "width_cm",
+   "fieldtype": "Float",
+   "label": "W (cm)"
+  },
+  {
+   "fieldname": "height_cm",
+   "fieldtype": "Float",
+   "label": "H (cm)"
+  },
+  {
+   "fieldname": "cbm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CBM",
+   "precision": "4"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-10 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Carton Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

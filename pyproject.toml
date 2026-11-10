@@ -1,7 +1,7 @@
 [project]
 name = "textile_mill"
 authors = [
-    { name = "Mission20 Zero", email = "mohtashim@codecrestsolutions.com"}
+    { name = "Mission20 Zero", email = "shoaibmohtashim973@gmail.com"}
 ]
 description = "Integrated denim, home textile and knitting mill on ERPNext"
 requires-python = ">=3.10"

@@ -1,0 +1,8 @@
+{
+  "name": "textile_mill",
+  "private": true,
+  "description": "Textile Mill on ERPNext",
+  "dependencies": {
+    "echarts": "^6.1.0"
+  }
+}

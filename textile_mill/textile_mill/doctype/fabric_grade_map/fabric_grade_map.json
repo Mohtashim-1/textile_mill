@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-10 03:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lot_item",
+  "grade",
+  "graded_item",
+  "target_warehouse",
+  "relative_sales_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "lot_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lot Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "A\nB\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "graded_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Graded Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relative_sales_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Relative Sales Value",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-10 03:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Mill",
+ "name": "Fabric Grade Map",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}
